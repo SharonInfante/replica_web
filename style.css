@@ -1,49 +1,193 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-nav{
-    background-color: blue;
-    padding-top: 15px; 
+    background-color: #F8F9FA;
 }
 
-
-.navbar{
-    list-style: none;
+header{
+    background-color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
-    margin-top: -1%;
-    padding-bottom: 1%;
+    align-items: center;
+    height: 70px;
+    padding: 5px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-.navbar button{
-    background-color: white;
+header .logo{
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+nav .navbar{
+    list-style: none;
+}
+
+nav .navbar li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+nav .navbar li a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+nav .navbar li a:hover{
+    color: #2937F0;
+}
+
+header .btn button{
+    color: #FFFFFF;
+    padding: 9px 25px;
+    background-color: #2937F0;
+    border: none;
     border-radius: 50px;
-    margin-left: 20px;
-    padding: 3px 10px 3px 10px;    
+    cursor: pointer;
+}
+
+header .btn button:hover{
+    background-color: #FFFFFF;
+    color: black;    
+}
+
+.icons{
+    padding-right: 8px;
 }
 
 .view1{
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 5%; 
+}
+
+.view1 .text1{
+    padding: 40px;
+}
+
+.text1 h1{
+    font-size: 70px;
+}
+
+.text1 p{
+    font-size: 22px;
+    color: #6C757D;
 }
 
 .movil{
-   width: 15%;
-   height: 70%;
-   position: absolute;
-   z-index: 1;
+    width: 15%;
+    height: 68%;
+    margin-left: 230px;
+    position: absolute;
+    z-index: 1;
 }
 
 .circle{
     width: 25%;
+    margin-left: 150px;
+    padding-top: 45px;
     position: absolute;
-    z-index: -1;   
+    z-index: -1;
+}
+
+.view2{
+    background-image: url(./means/images/fondo-view-2.jpg);
+    filter: contrast(80%);
+    height: 600px;
+    width: 100%;
+    margin-top: 180px;
+}
+
+.view2 .p1{
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 10%;
+    margin-left: 8%;
+}
+
+.view2 .btn2 button{
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.movil2{
+    width: 15%;
+    height: 68%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 17%;
+    margin-top: 5%;
+}
+
+.circle2{
+    width: 25%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 8%;
+    margin-left: 7%;
+}
+
+.view3{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.text3{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50% 50%;
+    transform: translate(-0%,50%);
+    text-align: center;
+    position: relative;
+}    
+
+.paragraph{
+    padding-top: 30px;
+}
+
+footer{
+    margin-top: 20%;
+    background-color: black;
+    height: 100px;
+    padding-top: 30px;
+}
+
+footer p{
+    color: #7C7A7C;
+    text-align: center;
+}
+
+.icons2{
+    width: 60px;
+    
+}
+
+#herramientas:nth-child(1) a, #descarga:nth-child(2){
+    color: #2937F0;
 }

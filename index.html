@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Replica Web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Replica Web</title>
+        <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="logo"><h4>Réplica Web</h4></div>
-            <div>
+    <body>
+        <header>
+            <div class="logo"><a href="#logo"><h3>Réplica Web</h3></a></div>
+            <nav>
                 <ul class="navbar">
-                    <li>Herramientas</li>
-                    <li>Descarga</li>
-                    <li><button>Enviar Feedback</button></li>
-                </ul>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#descarga">Descarga</a></li>
+                </ul>  
+            </nav>
+            <a href="https://factoriaf5.org/" target="_blank" class="btn"><button><iconify-icon icon="bi:chat-text-fill" class="icons"></iconify-icon>Enviar Feedback</button></a>
+        </header>
+        
+        <div class="container">
+            <div class="view1" id="logo">
+                <div class="text1">
+                    <h1>¡Muestranos tu talento programando!</h1><br>
+                    <p>Esta es tu oportunidad para demostrar lo que has aprendido en la ruta de la investigación y las master class!</p>
+                </div>
+                <div class="img2">
+                    <img class="circle" src="./means/images/elipse.png" alt="elipse">
+                    <img class="movil" src="./means/images/recurso-movil.png" alt="movil">
+                </div>
+            </div>
+
+            <div class="view2" id="descarga">
+                <div class="p1">
+                    <p>Y toma nota....</p>
+                    <p>de lo que seguirás</p>
+                    <p>aprendiendo</p>
+                </div>
+                <div> 
+                    <a href="https://factoriaf5.org/" target="_blank" class="btn2"><button>Factoría f5</button></a>
+                </div>    
+            </div>
+
+            <div class="view3" id="herramientas">
+                <div class="img3">
+                    <img class="circle2" src="./means/images/elipse.png" alt="elipse">
+                    <img class="movil2" src="./means/images/recurso-movil.png" alt="movil">
+                </div>
+                <div class="text3">
+                    <div>
+                        <img src="./means/icons/phone.png" class="icons">
+                        <h3>Hacer páginas responsive</h3><br>
+                        <p>Aprenderás a hacer páginas ajustables</p> 
+                        <p>a los diferentes tamaños de los dispositivos</p>
+                    </div>
+                    <div>
+                        <img src="./means/icons/camera.png" class="icons">
+                        <h3>Frameworks</h3><br>
+                        <p>Aprenderás la utilidad de los frameworks</p> 
+                        <p>y cómo utilizarlos</p>
+                    </div>   
+                    <div class="paragraph">
+                        <img src="./means/icons/gift.png" class="icons">
+                        <h3>Hacer animaciones</h3><br>
+                        <p>Aprenderás a hacer animaciones por medio</p> 
+                        <p>de CSS</p>
+                    </div> 
+                    <div class="paragraph">
+                        <img src="./means/icons/check.png" class="icons2">
+                        <h3>Front end</h3><br>
+                        <p>Y al final serás un gran desarrollador front</p> 
+                        <p>end!</p>
+                    </div> 
+                </div>            
+            </div>
+
+            <div>
+                <footer>
+                    <p>&copy; factoría F5.</p>
+                    <p>Privacy · Terms · FAQ</p>
+                </footer>
             </div>    
-        </nav>
-    </header>
-    
-    <div class="container">
-        <div class="view1">
-            <div class="text1">
-                <h1>¡Muestranos tu talento programando!</h1>
-                <p>Esta es tu oportunidad para demostrar lo que has aprendido en la ruta de la investigación y las master class!</p>
-            </div>
-            <div class="text2">
-                <img class="circle" src="./means/images/elipse.png" alt="elipse">
-                <img class="movil" src="./means/images/recurso-movil.png" alt="movil">
-            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
