@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+#logo {
+    scroll-margin-top: 70px;
+}
+
+#descarga{
+    scroll-margin-top: 70px;
+}
+
 body{
     background-color: #F8F9FA;
 }
@@ -19,6 +27,7 @@ header{
     width: 100%;
     top: 0;
     z-index: 1000;
+    font-family: 'Kanit';
 }
 
 header .logo{
@@ -49,9 +58,13 @@ nav .navbar li a{
     text-decoration: none;
 }
 
-nav .navbar li a:hover{
+li:focus{
     color: #2937F0;
 }
+
+/*nav .navbar li a:hover{
+    color: #2937F0;
+}*/
 
 header .btn button{
     color: #FFFFFF;
@@ -81,24 +94,49 @@ header .btn button:hover{
 
 .view1 .text1{
     padding: 40px;
+    margin-top: 20%;
 }
 
 .text1 h1{
     font-size: 70px;
+    font-family: 'Newsreader';
 }
 
 .text1 p{
-    font-size: 22px;
+    font-size: 20px;
     color: #6C757D;
+    font-family: 'Mulish';
+}
+
+.img2{
+    margin-top: 10%;
 }
 
 .movil{
     width: 15%;
     height: 68%;
-    margin-left: 230px;
+    margin-left: -225px;
     position: absolute;
-    z-index: 1;
+    border-radius: 28px;
 }
+
+
+.fondo{
+    width: 32%;
+    height: 111%;
+    margin-left: 250px;
+    margin-top: 6px;
+    border-radius: 28px;
+    z-index: 1;
+    animation: animate 3s linear infinite; 
+}
+
+@keyframes animate{	
+    0%{		
+        filter: hue-rotate(0deg);	
+    }100%{		
+        filter: hue-rotate(360deg);	
+}}
 
 .circle{
     width: 25%;
@@ -113,7 +151,7 @@ header .btn button:hover{
     filter: contrast(80%);
     height: 600px;
     width: 100%;
-    margin-top: 180px;
+    margin-top: 125px;
 }
 
 .view2 .p1{
@@ -122,10 +160,10 @@ header .btn button:hover{
     font-weight: bold;
     padding-top: 10%;
     margin-left: 8%;
+    font-family: 'Newsreader';
 }
 
 .view2 .btn2 button{
-    font-weight: bold;
     color: #FFFFFF;
     padding: 15px 20px;
     background-color: transparent;
@@ -134,16 +172,51 @@ header .btn button:hover{
     cursor: pointer;
     margin-left: 8%;
     margin-top: 2%;
+    font-family: 'Mulish';
 }
+
+.btn2 button:hover{
+    animation: boton 0.5s ;
+}
+
+@keyframes boton{
+    0%{
+        rotate: 0deg;
+    }100%{
+        rotate: -500deg;
+    }
+}
+
 
 .movil2{
     width: 15%;
     height: 68%;
     position: absolute;
     z-index: 1;
-    margin-left: 17%;
+    margin-left: -14%;
     margin-top: 5%;
+    position: absolute;
+    overflow: hidden;
 }
+
+
+.fondo2{
+    width: 34%;
+    height: 100%;
+    margin-left: 272px;
+    margin-top: 13%;
+    z-index: -1;
+    border-radius: 28px;
+    animation: animate 3s linear infinite;
+}   
+
+@keyframes animate{	
+    0%{		
+        filter: hue-rotate(0deg);	
+    }100%{		
+        filter: hue-rotate(360deg);	
+}}
+
 
 .circle2{
     width: 25%;
@@ -158,21 +231,34 @@ header .btn button:hover{
     grid-template-columns: 40% 60%;
 }
 
+.img3{
+    margin-top: 15%;
+
+}
 .text3{
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 50% 50%;
-    transform: translate(-0%,50%);
+    transform: translate(-0%,30%);
     text-align: center;
     position: relative;
 }    
+
+.text3 h2{
+    font-family: 'Kanit';
+}
+
+.text3 p{
+    font-family: 'Mulish';
+    color: #6C757D;
+}
 
 .paragraph{
     padding-top: 30px;
 }
 
 footer{
-    margin-top: 20%;
+    margin-top: 15%;
     background-color: black;
     height: 100px;
     padding-top: 30px;
@@ -191,3 +277,4 @@ footer p{
 #herramientas:nth-child(1) a, #descarga:nth-child(2){
     color: #2937F0;
 }
+
