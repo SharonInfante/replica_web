@@ -58,13 +58,9 @@ nav .navbar li a{
     text-decoration: none;
 }
 
-li:focus{
+nav .navbar li a:hover{
     color: #2937F0;
 }
-
-/*nav .navbar li a:hover{
-    color: #2937F0;
-}*/
 
 header .btn button{
     color: #FFFFFF;
@@ -112,6 +108,7 @@ header .btn button:hover{
     margin-top: 10%;
 }
 
+
 .movil{
     width: 15%;
     height: 68%;
@@ -128,7 +125,7 @@ header .btn button:hover{
     margin-top: 6px;
     border-radius: 28px;
     z-index: 1;
-    animation: animate 3s linear infinite; 
+    animation: animate 3s linear infinite;
 }
 
 @keyframes animate{	
@@ -145,6 +142,7 @@ header .btn button:hover{
     position: absolute;
     z-index: -1;
 }
+
 
 .view2{
     background-image: url(./means/images/fondo-view-2.jpg);
@@ -186,7 +184,6 @@ header .btn button:hover{
         rotate: -500deg;
     }
 }
-
 
 .movil2{
     width: 15%;
@@ -278,3 +275,137 @@ footer p{
     color: #2937F0;
 }
 
+@media screen and (max-width: 576px){
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 40%;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .btn button{
+        width: 100%;
+        display: flex;
+        flex-direction: initial;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 30%;
+        text-align: center;
+        font-size: 14px;
+    }
+ }   
+
+@media screen and (max-width: 576px){
+   .container{
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .view1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: -2%;
+    }
+
+    .view1 h1{
+        font-size: 30px;
+    } 
+
+    .view1 p{
+        width: 100%;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .img2 .circle{
+        width: 70%;
+        margin-left: 55px;      
+    }
+    
+    .img2 .movil{
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        margin: auto;
+        margin-left: -38%;
+    }
+
+    .img2 .fondo{
+        width: 36%;
+        height: 113%;
+        margin-left: 32%;
+    }
+
+
+    .view2{
+        width: 105%;
+        height: 200px;
+        background-size: 600px;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .view2 .p1{
+        font-size: 25px;
+    }
+
+    .view2 .btn2{
+        width: 100%;
+    }
+
+    .view3 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .view3 .text3{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: -15%;
+        margin-left: 15%;
+    }
+
+    .view3 .text3 p{
+        font-size: 14px;
+    }
+    
+    .img3{
+        width: 100%;
+    }
+
+    .img3 .circle2{
+        width: 70%;
+        margin-left: 55px;      
+    }
+    
+    .img3 .movil2{
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        margin: auto;
+        margin-left: -38%;
+    }
+
+    .img3 .fondo2{
+        width: 36%;
+        height: 118%;
+        margin-left: 48%;
+        position: relative;
+        margin-top: -1%;
+        padding-top: 5px;
+    }
+
+
+    footer{
+       margin-top: 650px;
+       width: 105%;
+    }
+
+}
