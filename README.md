@@ -1,14 +1,5 @@
 # REPLICA DE UNA WEB
 
-- Desarrollo de una página web a partir de unos mockups, siendo esta una replica exacta.
-- Página web estatica, con fines formativos.
+Desarrollo de una página web a partir de unos mockups, siendo esta una replica exacta.
 
-# Visualización:
-
-- Diseñada para visualización en movil y pc.
-
-# Autores:
-
-- Sharon Infante
-
-
+Pasos para su visualización:
